@@ -2,10 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>{{ name }}'s Watchlist</title>
+    <title>{{ user.name }}'s Watchlist</title>
+    <link rel="icon" href="{{ url_for('static', filename='la.gif') }}">
 </head>
 <body>
-    <h2>{{ name }}'s Watchlist</h2>
+    <h2>
+		<img alt="Zach LaVine" src="{{ url_for('static', filename='images/la.gif') }}">
+		{{ user.name }}'s Watchlist
+	</h2>
     {# 使用 length 过滤器获取 movies 变量的长度 #}
     <p>{{ movies|length }} Titles</p>
     <ul>
@@ -18,7 +22,7 @@
     </footer>
 </body> 
 </html>
-
+<img alt="xiugou" src="{{ url_for('static', filename='images/lou.gif') }}">
 
 
 
